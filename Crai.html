@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Portofolio - 13523054</title>
+    <style>
+        
+        :root {
+            --bg-color: #121212; /* Latar belakang gelap untuk nuansa modern dan fokus pada konten */
+            --primary-color: #1a1a1a; /* Warna dasar untuk kartu dan elemen sekunder */
+            --accent-color: #00e5ff; /* Warna aksen (cyan) yang cerah untuk elemen interaktif dan call-to-action */
+            --text-color: #e0e0e0; /* Warna teks utama (putih pudar) agar nyaman dibaca di latar gelap */
+            --secondary-text-color: #a0a0a0; /* Warna teks sekunder untuk detail yang tidak terlalu menonjol */
+            --border-color: #333333; /* Warna border yang lembut */
+        }
+
+        body {
+            font-family: 'sans-comic'; 
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .main-header {
+            background-color: rgba(18, 18, 18, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .main-nav ul li {
+            margin-left: 2rem;
+        }
+
+        .main-nav ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 5px;
+            transition: color 0.3s ease;
+        }
+
+        .main-nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        
+        #beranda {
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(18, 18, 18, 0.9), rgba(26, 26, 26, 0.95));
+        }
+
+        .beranda-content h1 {
+            font-family: serif;
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+        
+        .beranda-content h1 span {
+            color: var(--accent-color);
+        }
+
+        .beranda-content p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+            color: var(--secondary-text-color);
+        }
+
+        section {
+            padding: 6rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            color: #fff;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 6rem;
+            height: 3px;
+            background: var(--accent-color);
+            margin: 0.5rem auto 0;
+            border-radius: 2px;
+        }
+
+        .project-title {
+            text-align: left;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        #about {
+            height: 70vh;
+        }
+        #about p {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .project-card p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            color: var(--text-color);
+        }
+
+        .tech-stack {
+            background-color: rgba(0, 229, 255, 0.1);
+            border: 1px solid var(--accent-color);
+            border-radius: 6px;
+            padding: 1rem;
+            font-size: 0.95rem;
+            color: var(--accent-color);
+        }
+        .project-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo">Crai</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#projects">Proyek</a></li>
+                    <li><a href="#about">Tentang Saya</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="beranda">
+            <div class="beranda-content">
+                <h1><span>Aloisius Adrian Stevan Gunawan</span></h1>
+                <p>Portofolio ini dibuat dalam rangka untuk memenuhi tugas WBD.</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title">Proyek</h2>
+                
+                <h2 class="project-title">Proyek 1: Web pembelajaran</h2>
+                <div class="project-card">
+                    <p>
+                        Proyek ini merupakan website responsif yang dibuat menggunakan NestJS dan TypeScript. Berikut adalah <a class="project-link" href="https://github.com/mimiCrai/Seleksi_LABPRO2025.git">Link</a> github terkait.
+                    </p>
+                    <div class="tech-stack">
+                        <strong>Tech Stack:</strong> NestJS, TypeScript, hbs, TypeORM, PostgreSQL
+                    </div>
+                </div>
+
+                <h2 class="project-title">Proyek 2: 2048 solver</h2>
+                <div class="project-card">
+                    <p>
+                        Proyek ini merupakan program yang dibuat untuk memberikan langkah terbaik berikutnya pada suatu posisi tertentu. Program ini dibuat dengan menggunakan Python. Berikut adalah <a class="project-link" href="https://github.com/mimiCrai/2048Solver.git">Link</a> github terkait.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">Tentang Saya</h2>
+                <p>
+                    Saya adalah seorang mahasiswa ITB angkatan IF'23. Pada laman ini, saya telah menampilkan beberapa pengalaman yang saya miliki. 
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
+
